@@ -710,7 +710,7 @@ p.arrival-review span {margin-right: 15px;}
 background-color: #F8F9FD;}
 .feature-content{
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 .feature-content .col-sm-3{
     justify-content: center;
@@ -792,7 +792,10 @@ span.feature-review {margin-left: 10px;}
 --------------------------------------*/
 .newsletter{padding:120px 0 75px;}
 
-.hm-footer-widget{margin-bottom: 30px;}
+.hm-footer-widget{
+    margin-bottom: 30px;
+}
+
 .hm-foot-title h4 {
     font-size: 18px;
     font-weight: 700;
@@ -1012,9 +1015,14 @@ span.feature-review {margin-left: 10px;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mail{
+    margin-top: 30px;
+}
+
 @media screen and (max-width:700px){
     .contact {
        flex-direction: column;
+       align-items: center;
        height: 150vh;
     }
     .contact .form{
@@ -1028,13 +1036,13 @@ span.feature-review {margin-left: 10px;}
     }
     .feature-content{
         display: grid;
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
     }
     .acceuil .child p{
         width: 200px;
     }
-    .contact .form .name{
-        flex-direction: row;
+    .hm-footer-details{
+        align-items: center;
     }
 }
 
